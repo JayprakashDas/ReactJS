@@ -7,7 +7,7 @@ import VideoDetail from './VideoDetail';
 class App extends React.Component{
 
 	state ={videos:[], selectedVideo:null};
-	//To Show the video first tie without search default
+	
 	componentDidMount(){
 		this.onSearchTermSubmit('good days');
 	}
@@ -22,8 +22,7 @@ class App extends React.Component{
 			videos:response.data.items,
 			selectedVideo: response.data.items[0]
 			});
-		//So that the default video comes when user search selected vieo is updated as well
-
+		
 	};
 	onVideoselect = (video)=>{
 		this.setState({selectedVideo:video});
