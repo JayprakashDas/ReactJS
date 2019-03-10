@@ -4,7 +4,7 @@ class SearchBar extends React.Component{
 	state ={term: ''};
 
 onInputChange = event =>{
-	//Take the value from event and Update the term
+	
 	this.setState({term: event.target.value});
 
 };
